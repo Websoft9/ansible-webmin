@@ -26,8 +26,16 @@ Webmin 采用模块化开发，除了官方提供的[模块](https://doxfer.webm
 
 #### 是否可以设置服务器密码为 Web 默认密码？
 
-待调研
+官方 [faq](https://webmin.com/faq.html) 中有方案
 
 #### HTTPS访问是否是必须的？
+
+待研究
+
+#### Webmin 是否可以管理多用户？
+
+可以
+
+#### Webmin是否支持 FTP 多用户管理？
 
 待研究
