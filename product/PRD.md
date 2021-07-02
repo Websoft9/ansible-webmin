@@ -17,6 +17,11 @@ Webmin 采用模块化开发，除了官方提供的[模块](https://doxfer.webm
 
 待调研
 
+## 安装
+
+* [Webmin](https://doxfer.webmin.com/Webmin/Installation)
+* [Virtualmin](https://www.virtualmin.com/download)，同时会安装 Webmin
+
 ## 用户体验
 
 #### 是否可以设置服务器密码为 Web 默认密码？
