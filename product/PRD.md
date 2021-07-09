@@ -16,7 +16,7 @@ Webmin 采用模块化开发，除了官方提供的[模块](https://doxfer.webm
 
 #### Webmin 默认会安装 Apache, MySQL 吗？
 
-待调研
+不会
 
 ## 安装
 
