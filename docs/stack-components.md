@@ -4,16 +4,16 @@ sidebarDepth: 3
 
 # Parameters
 
-The RabbitMQ deployment package contains a sequence of software (referred to as "components") required for RabbitMQ to run. Below list the important information, the component name, installation directory path, configuration file path, port, version, etc.
+The Webmin deployment package contains a sequence of software (referred to as "components") required for Webmin to run. Below list the important information, the component name, installation directory path, configuration file path, port, version, etc.
 
 ## Path
 
 This solution use Docker to deploy all service, you can run the command `docker ps` to list them  
 
-### RabbitMQ
+### Webmin
 
-RabbitMQ installation directory:  */data/rabbitmq*  
-RabbitMQ logs directory:  */data/logs/rabbitmq*  
+Webmin installation directory:  */data/webmin*  
+Webmin logs directory:  */data/logs/webmin*  
 
 ### Apache
 
@@ -105,11 +105,11 @@ The following are the ports you may use:
 
 | Name | Number | Use |  Necessity |
 | --- | --- | --- | --- |
-| TCP | 80 | HTTP to access RabbitMQ | Required |
-| TCP | 443 | HTTPS to access RabbitMQ | Optional |
+| TCP | 80 | HTTP to access Webmin | Required |
+| TCP | 443 | HTTPS to access Webmin | Optional |
 | TCP | 3306 | Remote to access MySQL | Optional |
-| TCP | 9003 | Use port to access RabbitMQ | Optional |
-| TCP | 9002 | RabbitMQ Document Server on Docker | Optional |
+| TCP | 9003 | Use port to access Webmin | Optional |
+| TCP | 9002 | Webmin Document Server on Docker | Optional |
 | TCP | 9090 | phpMyAdmin on Docker | Optional |
 
 
@@ -137,6 +137,6 @@ docker -v
 yum info erlang
 apt show erlang
 
-# RabbitMQ version
-rabbitmqctl status | grep RabbitMQ*
+# Webmin version
+webminctl status | grep Webmin*
 ```

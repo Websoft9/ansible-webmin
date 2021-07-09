@@ -1,0 +1,19 @@
+- name: Add Webmin repositories 
+  yum_repository:
+    name: webmin
+    description: Webmin YUM repo
+    file: webmin
+    mirrorlist: https://download.webmin.com/download/yum/mirrorlist
+    gpgcheck: yes
+    enabled: yes
+
+- name: Import Webmin repo key
+  shell: |
+    wget https://download.webmin.com/jcameron-key.asc
+    rpm --import jcameron-key.asc
+    rm -rf jcameron-key.asc
+
+- name: Install Webmin
+  yum: 
+    name: webmin
+    update_cache: yes

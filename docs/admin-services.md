@@ -1,17 +1,17 @@
 # Start or Stop the Services
 
-These commands are required when you use the RabbitMQ of Websoft9.
+These commands are required when you use the Webmin of Websoft9.
 
-### RabbitMQ
+### Webmin
 
 ```shell
-sudo systemctl start rabbitmq-server
-sudo systemctl stop rabbitmq-server
-sudo systemctl restart rabbitmq-server
-sudo systemctl status rabbitmq-server
+sudo systemctl start webmin-server
+sudo systemctl stop webmin-server
+sudo systemctl restart webmin-server
+sudo systemctl status webmin-server
 
-# you can use this debug mode if RabbitMQ service can't run
-rabbitmq-server console
+# you can use this debug mode if Webmin service can't run
+webmin-server console
 ```
 
 ### MySQL

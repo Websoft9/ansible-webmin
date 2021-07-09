@@ -1,29 +1,29 @@
 # Deployment
 
-**Deployment is to copy the pre-installed RabbitMQ package online to your Cloud Server**. For example, after the user subscribes RabbitMQ on the Cloud Platform, the Platform will automatically copy the RabbitMQ to the corresponding Cloud Server.
+**Deployment is to copy the pre-installed Webmin package online to your Cloud Server**. For example, after the user subscribes Webmin on the Cloud Platform, the Platform will automatically copy the Webmin to the corresponding Cloud Server.
 
-- If RabbitMQ has been deployed, go to [Initial Installation](/stack-installation.md) to complete the operation.
-- If not, you need to deploy RabbitMQ to your cloud server first.
+- If Webmin has been deployed, go to [Initial Installation](/stack-installation.md) to complete the operation.
+- If not, you need to deploy Webmin to your cloud server first.
 
-We offer two schemes for RabbitMQ deployment and results are the same.
+We offer two schemes for Webmin deployment and results are the same.
 
 ## Deploy by Image
 
-**To deploy by Image** means to start instance based on RabbitMQ images. **RabbitMQ Image** provide OS and software environment needed for RabbitMQ.
+**To deploy by Image** means to start instance based on Webmin images. **Webmin Image** provide OS and software environment needed for Webmin.
 
 For users with experience with cloud servers, to deploy by Image means "one-click deployment".
 
-Websoft9 publishes [RabbitMQ image](https://apps.websoft9.com/rabbitmq) on Cloud Platforms and there are three methods to deploy it.
+Websoft9 publishes [Webmin image](https://apps.websoft9.com/webmin) on Cloud Platforms and there are three methods to deploy it.
 
-* When **Create New Instance**, you can select the RabbitMQ image as the system boot template.
-* When you **Subscribe RabbitMQ** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
-* When **Re-install OS** for you instance, you can replace the existing image with a RabbitMQ image.
+* When **Create New Instance**, you can select the Webmin image as the system boot template.
+* When you **Subscribe Webmin** at Marketplace, the system will ask you to create a new instance for this image in the meantime.
+* When **Re-install OS** for you instance, you can replace the existing image with a Webmin image.
 
 ## Deploy by Script
 
 **To Deploy by Script** means to run a script on your cloud instance to pull the pre-installed package online to your instance and configure it at the same time.
 
-Websoft9 provides the [RabbitMQ ansible automation script](https://github.com/Websoft9/ansible-rabbitmq) on Github. If you are familiar with Ansible, you can deploy the RabbitMQ to the instance automatically.
+Websoft9 provides the [Webmin ansible automation script](https://github.com/Websoft9/ansible-webmin) on Github. If you are familiar with Ansible, you can deploy the Webmin to the instance automatically.
 
 ## Comparison
 
