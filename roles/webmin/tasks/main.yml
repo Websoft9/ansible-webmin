@@ -20,6 +20,8 @@
     force: yes
   with_items:
     - {src: /etc/webmin/,dest: /data/config/webmin}
+    - {src: /var/webmin/miniserv.log,dest: /data/logs/webmin.log}
+    - {src: /var/webmin/miniserv.error,dest: /data/logs/webmin.error}
 
 # check version
 - name: Check Webmin Version
