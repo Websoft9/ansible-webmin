@@ -17,3 +17,8 @@
   yum: 
     name: webmin
     update_cache: yes
+
+# check version
+- name: Check Webmin Version
+  shell: |
+    sudo echo "webmin version:" $(rpm -qa webmin |awk -F - '{print $2}') |tee -a /data/logs/install_version.txt

@@ -16,7 +16,7 @@
     daemon_reload: yes
 
 # set soft link
-- name: Create link
+- name: Create soft link for webmin
   file:
     src: '{{item.src}}'
     dest: '{{item.dest}}'
@@ -28,10 +28,6 @@
     - {src: /etc/webmin/,dest: /data/webmin/config}
     - {src: /var/webmin/miniserv.log,dest: /data/logs/webmin.log}
     - {src: /var/webmin/miniserv.error,dest: /data/logs/webmin.error}
-
-# check version
-- name: Check Webmin Version
-  shell: sudo echo "webmin version:" $(rpm -qa webmin |awk -F - '{print $2}') |tee -a /data/logs/install_version.txt
 
 # check service state
 - name: Check Webmin Service
