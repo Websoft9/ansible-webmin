@@ -2,7 +2,6 @@
   apt_repository:
     repo: deb https://download.webmin.com/download/repository sarge contrib
     state: present
-    filename: webmin
 
 - name: Import Webmin repo key
   shell: | 
