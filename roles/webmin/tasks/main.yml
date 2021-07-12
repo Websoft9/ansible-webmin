@@ -25,7 +25,7 @@
 
 # check version
 - name: Check Webmin Version
-  shell: sudo echo $() |tee -a /data/logs/install_version.txt"
+  shell: sudo echo $() |tee -a /data/logs/install_version.txt
 
 # check service state
 - name: Check Webmin Service
