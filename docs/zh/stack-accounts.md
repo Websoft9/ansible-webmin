@@ -8,8 +8,8 @@
 
 ## Webmin
 
-* 管理员账号: `admin`
-* 管理员密码: `admin` 或 存储在您的服务器中的文件中 */credentials/password.txt*  
+* 管理员账号: `root`
+* 管理员密码: 服务器的 root 密码
 
 ## MySQL
 

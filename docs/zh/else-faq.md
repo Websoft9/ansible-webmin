@@ -15,25 +15,21 @@ systemctl stop webmin-server
 webmin-server console
 ```
 
-#### 是否可以通过命令行修改Webmin后台密码？
+#### HTTP Tunnel 有什么作用？
 
-可以，`webminctl change_password  admin newpassword`
+待研究
 
-#### 如果没有域名是否可以部署 Webmin？
+#### Webmin 中是否包含 Apache？
 
-可以，访问`http://服务器公网IP` 即可
+不包含
 
-#### 数据库 root 用户对应的密码是多少？
+#### 是否可以通过命令行修改 Webmin 后台密码？
 
-密码存放在服务器相关文件中：`/credentials/password.txt`
+Webmin 使用的是服务器 root 密码，因此用 `passwd` 系统命令即可
 
-#### 是否有可视化的数据库管理工具？
+#### 如果没有设置 HTTP 是否运行 Webmin？
 
-有，内置phpMyAdmin，访问地址：*http://服务器公网IP:9090*
-
-#### 如何禁止外界访问phpMyAdmin？
-
-连接服务器，编辑 [phpMyAdmin 配置文件](/zh/stack-components.md#phpmyadmin)，将其中的 `Require all granted` 更改为 `Require ip 192.160.1.0`，然后重启 Apache 服务
+可以，访问`http://服务器公网IP:10000` 即可
 
 #### 是否可以修改Webmin的源码路径？
 

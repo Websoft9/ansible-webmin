@@ -5,13 +5,10 @@
 ### Webmin
 
 ```shell
-sudo systemctl start webmin-server
-sudo systemctl stop webmin-server
-sudo systemctl restart webmin-server
-sudo systemctl status webmin-server
-
-# you can use this debug mode if Webmin service can't run
-webmin-server console
+sudo systemctl start webmin
+sudo systemctl stop webmin
+sudo systemctl restart webmin
+sudo systemctl status webmin
 ```
 
 ### MySQL

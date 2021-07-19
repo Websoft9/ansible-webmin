@@ -8,17 +8,11 @@ Webmin 预装包包含 Webmin 运行所需一序列支撑软件（简称为“�
 
 ## 路径
 
-本部署方案中的 Webmin 采用 Docker 部署，运行 `docker ps` 查看运行的容器。
-```
-CONTAINER ID   IMAGE                           COMMAND                  CREATED              STATUS                PORTS                               NAMES
-4ff55aec7671   webmin                         "/docker-entrypoint.…"   11 seconds ago       Up 10 seconds         0.0.0.0:9010->3000/tcp              webmin
-3067c535663b   mysql:5.7                       "docker-entrypoint.s…"   About a minute ago   Up 58 seconds         33060/tcp, 0.0.0.0:3309->3306/tcp   webmin-mysql
-```
-
 ### Webmin
 
-Webmin 安装目录： */data/webmin*  
-Webmin 日志目录： */data/logs/webmin*  
+Webmin 安装目录： */data/apps/webmin*  
+Webmin 日志文件： */data/apps/webmin/webmin.log*  
+Webmin 模块目录： */data/apps/webmin/modules*  
 
 ### Apache
 

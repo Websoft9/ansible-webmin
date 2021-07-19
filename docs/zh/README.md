@@ -6,9 +6,9 @@ home: false
 
 本文档由 [Websoft9](https://www.websoft9.com/) 公司提供，用于指导用户学习 Webmin 的安装部署与基本运维技术，包括：Webmin部署、初始化安装、环境配置、HTTPS、SMTP、备份升级和连接云服务器操作等基本操作。
 
-[Webmin](https://www.webmin.com) 流行的开源消息队列系统，用erlang语言开，是AMQP（高级消息队列协议）的标准实现。用于在分布式系统中存储转发消息，在易用性、扩展性、高可用性等方面表现不俗。
+[Webmin](https://www.webmin.com) 是基于 Web 的可视化 Linux/Unix 系统管理员工具，它可以管理 Apache, MySQL等基础环境软件，也可以管理 DNS, FTP, 用户, 防火墙等系统级配置。
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-gui-websoft9.png)
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-dashboard-websoft9.png)
 
 ---
 
