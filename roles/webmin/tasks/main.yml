@@ -23,9 +23,9 @@
     state: link
     force: yes
   with_items:
-    - {src: /var/webmin/,dest: /data/webmin}
+    - {src: /var/webmin/,dest: /data/apps/webmin}
     - {src: /etc/webmin/,dest: /data/config/webmin}
-    - {src: /etc/webmin/,dest: /data/webmin/config}
+    - {src: /etc/webmin/,dest: /data/apps/webmin/config}
     - {src: /var/webmin/miniserv.log,dest: /data/logs/webmin.log}
     - {src: /var/webmin/miniserv.error,dest: /data/logs/webmin.error}
 
