@@ -34,3 +34,8 @@
   shell: systemctl status webmin | grep Active*
   register: check_webmin_service
   notify: check_webmin_service
+
+# check version
+- name: Check Webmin Version
+  shell: |
+    sudo echo "webmin version:" $(cat /etc/webmin/version) |tee -a /data/logs/install_version.txt

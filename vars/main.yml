@@ -1,2 +1,4 @@
 
-nginx_reverse_proxy_port: "10000"
+apache_vhost_mode: "reverse"
+apache_reverse_proxy_port: "10000"
+apache_appanme: "webmin"

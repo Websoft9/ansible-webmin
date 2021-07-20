@@ -11,11 +11,6 @@
 * 管理员账号: `root`
 * 管理员密码: 服务器的 root 密码
 
-## MySQL
-
-* 管理员账号：*`root`*
-* 管理员密码：存储在您的服务器中的文件中 */credentials/password.txt*  
-
 ## Linux
 
 * 主机地址：服务公网IP地址

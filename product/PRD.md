@@ -40,3 +40,7 @@ Webmin 采用模块化开发，除了官方提供的[模块](https://doxfer.webm
 #### Webmin是否支持 FTP 多用户管理？
 
 暂时找不到，无法上传文件夹
+
+#### 是否可以提前准备数据库软件安装包？
+
+考虑 Webmin 默认安装了 MySQL, PostgreSQL 模块，因此可以建议用户安装它们

@@ -8,7 +8,7 @@ This documentation is provided by [Websoft9](https://www.websoft9.com/). It can 
 
 [Webmin](https://webmin-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of Webmin world-wide at small startups and large enterprises, Webmin is the most popular open source message broker.
 
-![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-gui-websoft9.png)
+![Webmin Dashboard](https://libs.websoft9.com/Websoft9/DocsPicture/en/webmin/webmin-dashboard-websoft9.png)
 
 ---
 

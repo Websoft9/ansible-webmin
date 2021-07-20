@@ -2,18 +2,15 @@
 
 #### Webmin 是否支持多语言？
 
-支持
+支持（包含中文），控制台自由切换
 
 #### 本项目中 Webmin 采用何种安装方式？
 
 采用 rpm/deb 包的安装方式
 
-#### 如何以调试模式启动Webmin服务？
+#### 新装的 Webmin 模块为何任然显示在 Un-used Modules 菜单下？
 
-```
-systemctl stop webmin-server
-webmin-server console
-```
+安装模块后，点击【刷新模块】才可将模块自动显示在正常的菜单下
 
 #### HTTP Tunnel 有什么作用？
 
