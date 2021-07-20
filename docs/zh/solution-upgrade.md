@@ -24,21 +24,6 @@ yum update -y --skip-broken
 
 ## Webmin 升级
 
-Webmin 基于 Docker 部署，其升级流程：拉取镜像 > 删除容器 > 重建容器
+Webmin 提供了可视化的在线升级功能，升级非常方便
 
-> 升级之前请确保您已经完成了服务器的镜像（快照）备份
-
-1. 登录服务器，编辑 */data/wwwroot/webmin/.env* 文件，将版本变量的值修改为目标版本号
-
-2. 拉取目标版本的镜像
-   ```
-   cd /data/wwwroot/webmin
-   docker-compose pull
-   ```
-   > 如果显示没有镜像可拉取，则无需升级
-
-3. 删除旧容器，重新创建 Webmin 容器
-    ```
-    docker-compose down -v
-    docker-compose up -d
-    ```
+![升级](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-upgrade-websoft9.png)

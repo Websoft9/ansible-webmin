@@ -11,40 +11,13 @@ sudo systemctl restart webmin
 sudo systemctl status webmin
 ```
 
-### MySQL
+### Apache
 
 ```shell
-sudo systemctl start mysql
-sudo systemctl stop mysql
-sudo systemctl restart mysql
-sudo systemctl status mysql
-```
-
-### MySQL on Docker
-
-```shell
-sudo docker start redmine-mysql
-sudo docker restart redmine-mysql
-sudo docker stop redmine-mysql
-sudo docker stats redmine-mysql
-```
-
-### Redis
-
-```shell
-systemctl start redis
-systemctl stop redis
-systemctl restart redis
-systemctl status redis
-```
-
-### phpMyAdmin
-
-```shell
-sudo docker start phpmyadmin
-sudo docker stop phpmyadmin
-sudo docker restart phpmyadmin
-sudo docker stats pgadmin
+sudo systemctl start apache
+sudo systemctl stop apache
+sudo systemctl restart apache
+sudo systemctl status apache
 ```
 
 ### Docker
@@ -68,13 +41,4 @@ sudo docker-compose up -d
 sudo docker-compose start
 sudo docker-compose stop
 sudo docker-compose restart
-```
-
-### Nginx
-
-```shell
-sudo systemctl start nginx
-sudo systemctl stop nginx
-sudo systemctl restart nginx
-sudo systemctl status nginx
 ```

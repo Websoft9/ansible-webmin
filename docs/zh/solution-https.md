@@ -19,20 +19,30 @@ sudo certbot
 如果你已经申请了证书，只需三个步骤，即可完成 HTTPS 配置
 
 1. 将申请的证书、 证书链文件和秘钥文件上传到 */data/cert* 目录
-2. 打开虚拟主机配置文件：*/etc/nginx/conf.d/default.conf* ，插入**HTTPS 配置段** 到 *server{ }* 中
+2. 打开虚拟主机配置文件：*/etc/httpd/conf.d/vhost.conf* ，新增**HTTPS 配置段** 到文件中
  ``` text
-   #-----HTTPS template start------------
-   listen 443 ssl; 
-   ssl_certificate /data/cert/xxx.crt;
-   ssl_certificate_key /data/cert/xxx.key;
-   ssl_trusted_certificate /data/cert/chain.pem;
-   ssl_session_timeout 5m;
-   ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-   ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:HIGH:!aNULL:!MD5:!RC4:!DHE;
-   ssl_prefer_server_ciphers on;
-   #-----HTTPS template end------------
+   <VirtualHost *:443>
+    ServerName  webmin.yourdomain.com
+    DocumentRoot "/data/apps/webmin"
+    #ErrorLog "logs/webmin.yourdomain.com-error_log"
+    #CustomLog "logs/webmin.yourdomain.com-access_log" common
+    <Directory "/data/apps/webmin">
+    Options Indexes FollowSymlinks
+    AllowOverride All
+    Require all granted
+    </Directory>
+    SSLEngine on
+    SSLCertificateFile  /data/cert/webmin.yourdomain.com.crt
+    SSLCertificateKeyFile  /data/cert/webmin.yourdomain.com.key
+    SSLCertificateKeyFile  /data/cert/webmin.yourdomain.com.key
+    </VirtualHost>
    ```
-3. 重启[Nginx服务](/zh/admin-services.md#nginx)
+3. 修改域名信息，保存配置文件
+
+4. 重启[ Apache 服务](/zh/admin-services.md#nginx)后生效
+   ```
+   sudo systemctl restart apache
+   ```
 
 ## 专题指南
 

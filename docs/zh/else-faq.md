@@ -16,9 +16,15 @@
 
 待研究
 
+#### 如何禁用 Webmin 继承操作系统账号？
+
+默认的【Unix验证】 更改为 【设置为】，同时设置新密码和用户
+
+![](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-usermode-websoft9.png)
+
 #### Webmin 中是否包含 Apache？
 
-不包含
+不包含。但本部署方案中我们额外安装了 Apache
 
 #### 是否可以通过命令行修改 Webmin 后台密码？
 

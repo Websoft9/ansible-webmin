@@ -36,6 +36,8 @@ Docker daemon.json 文件：默认没有创建，请到 */etc/docker* 目录下�
 | 名称 | 端口号 | 用途 |  必要性 |
 | --- | --- | --- | --- |
 | TCP | 10000 | 通过 HTTP 访问 Webmin 控制台 | 可选 |
+| TCP | 80 | Apache 转发访问 Webmin 控制台 | 可选 |
+| TCP | 443 | Apache 转发加密访问 Webmin 控制台 | 可选 |
 
 ## 版本号
 
@@ -50,6 +52,9 @@ lsb_release -a
 
 # Docker Version
 docker -v
+
+# Apache Version
+httpd -v
 
 # Webmin version
 cat /data/apps/webmin/
