@@ -26,21 +26,6 @@ sudo yum update -y --skip-broken
 
 ## Upgrade Webmin
 
-This deployment solution is based on Docker and so you can upgrade Webmin by the standard process of Docker:  
+Webmin have the interface for upgrade, it very easy for you
 
-> You should complete an image or snapshot backup for instance before upgrade
-
-1. Use **SFTP** to login Server, modify **APP_VERSION** in the **.env** file of Webmin directory
-
-2. Go to the code-server root directory, then pull new images
-   ```
-   cd /data/wwwroot/webmin
-   docker-compose pull
-   ```
-3. Delete old container and recreate new container
-   ```
-   docker-compose down -v
-   docker-compose up -d
-   ```
-
-Refer to the official docs: [Upgrading Webmin](https://www.webmin.com/upgrade.html)
+![Webmin upgrade](https://libs.websoft9.com/Websoft9/DocsPicture/en/webmin/webmin-upgrade-websoft9.png)

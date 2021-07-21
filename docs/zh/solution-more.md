@@ -22,7 +22,9 @@ Webmin 域名绑定操作步骤：
 
 ## 修改密码
 
-Webmin 默认使用的是服务器 root 账号，修改服务器密码即修改 Webmin 密码。
+Webmin 默认使用的是服务器 root 账号，修改服务器密码即修改 Webmin 密码。  
+
+故，用 `passwd` 系统命令即可
 
 ## Apache 配置
 

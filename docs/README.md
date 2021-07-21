@@ -6,7 +6,7 @@ home: false
 
 This documentation is provided by [Websoft9](https://www.websoft9.com/). It can help users to acquire skills of Webmin Deployment, Installation, Configuration, HTTPS, SMTP, Backup, Upgrade, Connect Instance and more.
 
-[Webmin](https://webmin-server.apache.org/) is the most widely deployed open source message broker. With more than 35,000 production deployments of Webmin world-wide at small startups and large enterprises, Webmin is the most popular open source message broker.
+[Webmin](https://www.webmin.com/) is a web-based interface for system administration for Unix. Using any modern web browser, you can setup user accounts, Apache, DNS, file sharing and much more.
 
 ![Webmin Dashboard](https://libs.websoft9.com/Websoft9/DocsPicture/en/webmin/webmin-dashboard-websoft9.png)
 

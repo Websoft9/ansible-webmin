@@ -25,9 +25,3 @@ df -lh
 # view memory rate
 free -lh
 ```
-
-#### Error in Chrome when modify password?
-
-This error has nothing to do with Webmin server. Just upgrade you local Chrome to solve it.
-
-![chrome error of Webmin](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-chromeerror-websoft9.png)

@@ -1,31 +1,42 @@
 # FAQ
 
-#### How can I enable the debug mode of Webmin service?
+#### Does Webmin support multiple languages?
 
-```
-systemctl stop webmin-server
-webmin-server console
-```
+Yes, you can change language from Webmin console
 
-#### Can I reset password of Webmin by command?
+#### What kind of installation method does Webmin use in this project?
 
-Yes, e.g `webminctl change_password  admin newpassword`
+Use rpm/deb
+
+#### Why is the newly installed Webmin module still displayed under the Un-used Modules menu?
+
+You should click【Refresh module】after the installation of new module
+
+#### What is the function of HTTP Tunnel?
+
+To be studied
+
+#### How to disable Webmin inherit the Linux system user?
+
+You can 【Unix验证】 更改为 【设置为】，同时设置新密码和用户
+
+![](https://libs.websoft9.com/Websoft9/DocsPicture/en/webmin/webmin-usermode-websoft9.png)
+
+#### Is Apache included in Webmin?
+
+Does not contain. But in this deployment plan, we have additionally installed Apache
+
+#### Can I reset password of Webmin by command? 
+
+Webmin uses the server root password, so use the `passwd` system command
 
 #### If there is no domain name, can I deploy Webmin?
 
-Yes, access Webmin by *http://Server's Internet IP:8161*.
-
-#### What is the password for the database root user?
-
-The password is stored in the server related file `/credentials/password.txt`.
-
-#### Is there a web-base GUI database management tool?
-
-Yes, phpMyAdmin is included. Visit by *http://Server's Internet IP:9090*.
+Yes, access Webmin by *http://Server's Internet IP:10000*.
 
 #### Is it possible to modify the source path of Webmin?
 
-No.
+No
 
 #### How to change the permissions of filesystem?
 

@@ -2,10 +2,6 @@
 
 Each of the following solutions has been proved to be effective and we hope it can give you help.
 
-## Configuration 
-
-Refer to the official docs: https://www.webmin.com/configure.html
-
 ## Binding Domain
 
 The precondition for binding a domain is that Webmin can accessed by domain name.
@@ -14,39 +10,16 @@ When there is only one website on the server, you can visit the website without 
 
 Steps for binding Webmin domain are as follows:
 
-1. Connect your Cloud Server;
-2. Modify [Nginx vhost configuration file](/stack-components.md#nginx),and change the **server_name**'s value to your domain name.
-   ```text
-   server
-   {
-   listen 80;
-   server_name www.example.com;  # change it into your domain name
-   ...
-   }
-   ```
-3. Restart Nginx service
-   ```
-   sudo systemctl restart nginx
-   ```
+1. Connect your Cloud Server
+
+2. Login to Webmin console, open:【Apache 服务器】>【编辑配置文件】
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/webmin/webmin-confapache001-websoft9.png)
+
+3. Modify [Apache vhost file](/stack-components.md#apache) and set item **ServerName** to your value
+   ![](https://libs.websoft9.com/Websoft9/DocsPicture/en/webmin/webmin-confapache002-websoft9.png)
+
+4. Save it and restart [Apache service](/admin-services.md#apache)
 
 ## Resetting Password
 
-There are two main measures to reset password.
-
-### Changing password
-
-Take the steps below:
-
-1. log in the Webmin backend, open 【Manage】>【Staff】 and find the user account, of which you want to change password;
-
-2. start to change the password.
-
-### Forgot Password
-
-Try to retrieve your password through e-mail when forgot it.
-
-Follow the steps below:
-
-1. complete [SMTP setting](/solution-smtp.md);
-
-2. open
+Webmin inherit the Linux user, so mean Webmin user and password is the same with Linux system.
