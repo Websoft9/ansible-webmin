@@ -18,13 +18,22 @@
 
    > Webmin 默认以服务器的 root 用户作为账号
 
-3. 依次打开菜单：【Webmin】>【Change Language and Theme】重设所需的语言
+3. 设置语言：依次打开菜单【Webmin】>【Change Language and Theme】重设所需的语言
    ![Webmin 设置语言](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-changelangs-websoft9.png)
 
-4. 点击菜单下方的【>_】图标，进入 SSH 命令行模式（ESC 键取消）
+4. 系统管理：通过【系统】菜单可以进行系统管理，如修改密码及用户及群组、软件包管理等
+   ![Webmin 系统管理](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-system-websoft9.png)
+
+5. 服务器管理：通过【服务器】菜单可以进行服务器管理，如 Apache web服务、SSH服务等
+   ![Webmin 服务器管理](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-server-websoft9.png)
+
+5. 文件管理：通过【Tools】>【File Manage】菜单可以进行目录、文件管理，如新建文件夹、上传文件、修改文件的权限等
+   ![Webmin 文件管理](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-file-websoft9.png)
+
+6. 点击菜单下方的【>_】图标，进入 SSH 命令行模式（ESC 键取消）
    ![Webmin SSH 模式](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-sshcli-websoft9.png)
 
-4. 完成其他所需的配置
+7. 完成其他所需的配置
 
 > 需要了解更多 Webmin 的使用，请参考官方文档：[Webmin Documentation](http://doxfer.webmin.com/Webmin/Main_Page)
 
@@ -57,7 +66,7 @@ PHP 和 MySQL 的安装是比较麻烦的，所幸，我们可以使用 Websoft9
 
 先下载 WordPress 到本地，然后上传、解压、修改文件权限。
 
-1. 通过菜单打开“其他”->“File Manager”, 选择进入/data/wwwroot/default目录，点击“File”下拉菜单，选择“Upload to current directory”完成wordpress压缩包上传：
+1. 通过菜单打开【Tools】>【File Manager】 选择进入/data/wwwroot/default 目录，点击“File”下拉菜单，选择“Upload to current directory”完成wordpress压缩包上传：
    ![Webmin 上传](http://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/wb01.png)
 
 1. 选中软件压缩包，鼠标右键中选择“Extract”,文件开始解压缩。
@@ -74,7 +83,7 @@ PHP 和 MySQL 的安装是比较麻烦的，所幸，我们可以使用 Websoft9
 
 ### 创建数据库
 
-1. 打开菜单“服务器”->“MySQL数据库服务器”，点击“创建新的数据库”。
+1. 打开菜单【服务器】->“【ySQL数据库服务器】，点击“创建新的数据库”。
    ![Webmin MySQL数据库服务器](http://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/wb06.png)
 
 2. 设置你的数据库名称
@@ -84,7 +93,7 @@ PHP 和 MySQL 的安装是比较麻烦的，所幸，我们可以使用 Websoft9
 
 配置虚拟主机，需提前将域名解析到服务器。解析成功后，参考下面配置完成虚拟主机设置：
 
-1. 打开菜单“服务器”->“Apache服务器”，点击“Create virtual host”。注意：请使用您自己的域名，且配置域名解析到该服务器IP。
+1. 打开菜单【服务器】->【Apache服务器】，点击“Create virtual host”。注意：请使用您自己的域名，且配置域名解析到该服务器IP。
    ![](http://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/wb08.png)
 
 2. 点击右上角按钮，使域名设置生效：

@@ -28,8 +28,42 @@ Webmin 默认使用的是服务器 root 账号，修改服务器密码即修改 
 
 ## Apache 配置
 
+Webmin Apache配置域名的操作如下：
+
+假设要配置的域名为 test3.websoft9.cn，对应WordPress的根目录是/data/wwwroot/default/wordpress，接下来为该站点添加配置文件，设置域名、访问目录等（根据这个方法重复多次，就可以配置不同的网站的域名）:
+
+1. 通过http://IP地址登录webmin面板工具。
+
+2. 通过菜单中的“服务器”-》“Apache服务器”打开服务器配置。
+
+3. 通过“Create virtual host”创建新的虚拟主机，填写参数，然后点击“创建”。
+   > 配置说明
+     端口：80
+     网站根目录: /data/wwwroot/default/wordpress 
+     域名：test3.websoft9.cn
+     配置文件名称：test3.conf，放在Apache配置文件目录 /etc/httpd/conf.d
+
+   ![Webmin Apache](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-apache-vhost-websoft9.png)
+
+4. 通过SSH模式查看生产配置文件
+
+   ![Webmin Apache](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-apache-vhost-conf-websoft9.png)
+
+
 ## 修改时区
 
 ## FTP 管理
 
+通过【Tools】>【File Manage】菜单可以进行文件管理，如文件的上传、下载等
+
+选择 Wordpress 文件夹，点击【file】下拉菜单，选择“上传到当前目录”，完成文件上传
+
+   ![Webmin File](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-ftp-websoft9.png)
+
 ## 用户管理
+
+通过【系统】>【用户与群组】菜单可以进行用户及角色（分组）管理，如新增用户和编辑用户
+
+选择“创建新用户”或点击用户列表中的用户可以实现用户添加和编辑操作。
+
+   ![Webmin File](https://libs.websoft9.com/Websoft9/DocsPicture/zh/webmin/webmin-user-websoft9.png)
