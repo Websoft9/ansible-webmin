@@ -8,6 +8,12 @@
 - name: Remove all Webmin process for use system restart
   shell: pkill miniserv
 
+- name: Webmin proxy
+  lineinfile:
+    path: /etc/webmin/config
+    line: referer=apachehost
+    create: yes
+
 - name: Restart and Enable Webmin
   systemd:
     name: webmin
