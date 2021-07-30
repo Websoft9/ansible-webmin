@@ -40,7 +40,7 @@ The following are the ports you may use:
 | --- | --- | --- | --- |
 | TCP | 80 | HTTP to access Webmin by Apache | Required |
 | TCP | 443 | HTTPS to access Webmin by Apache| Optional |
-| TCP | 1000 | HTTP to access Webmin directly | Optional |
+| TCP | 10000 | HTTP to access Webmin directly | Optional |
 
 ## Version
 
