@@ -8,8 +8,22 @@
 
 ## Webmin
 
+### 密码登陆
+
 * 管理员账号: `root`
 * 管理员密码: 服务器的 root 密码
+
+### 秘钥登陆
+
+服务器未设置root密码,使用秘钥登陆的情况，执行如下脚本：
+
+```
+sudo su -
+passwd 'your password'
+```
+
+* 管理员账号: `root`
+* 管理员密码: 'your password'
 
 ## Linux
 
