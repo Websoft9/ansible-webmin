@@ -17,3 +17,4 @@
   yum: 
     name: webmin
     update_cache: yes
+    disable_gpg_check: yes
